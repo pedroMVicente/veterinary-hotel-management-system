@@ -2,11 +2,11 @@
 
 A comprehensive Java-based hotel management system for a veterinary facility featuring keepers, veterinarians, habitats with trees, and advanced satisfaction algorithms. Built with object-oriented design patterns and extensible architecture.
 
-## 📋 Project Overview
+## Project Overview
 
 This system manages a veterinary hotel where animals of various species are cared for by keepers (responsible for feeding and habitat cleaning) and veterinarians (responsible for animal health through vaccinations). The application calculates satisfaction levels for both animals and staff based on complex formulas considering multiple environmental and social factors.
 
-## 🐾 Core Entities
+## Core Entities
 
 ### Animals & Species
 
@@ -44,8 +44,8 @@ Habitats can be more or less suitable for specific species, directly impacting a
 ### Trees
 
 **Tree Types:**
-- 🍂 **Deciduous (CADUCA)**: Lose leaves mainly in autumn, bare in winter
-- 🌲 **Evergreen (PERENE)**: Lose some leaves year-round, more in winter
+- **Deciduous (CADUCA)**: Lose leaves mainly in autumn, bare in winter
+- **Evergreen (PERENE)**: Lose some leaves year-round, more in winter
 
 **Properties:**
 - Unique identifier (case-insensitive string)
@@ -126,7 +126,7 @@ Example: Vaccinating a bird (AVE) with a mammal (MAMÍFERO) vaccine = 6 damage
 
 Health history example: `ACIDENTE,ACIDENTE,ERRO,ERRO,ERRO,NORMAL`
 
-## ✨ Key Features
+## Key Features
 
 ### Season Management
 - Four seasons: Spring (0), Summer (1), Autumn (2), Winter (3)
@@ -152,7 +152,7 @@ Health history example: `ACIDENTE,ACIDENTE,ERRO,ERRO,ERRO,NORMAL`
 - Single active file per session
 - Unsaved changes warnings
 
-## 🛠️ Technical Implementation
+## Technical Implementation
 
 ### Architecture
 
@@ -217,7 +217,7 @@ hva/
 | Vaccine | `DuplicateVaccineKeyException` | Duplicate vaccine ID |
 | Responsibility | `NoResponsibilityException` | Invalid responsibility |
 
-## 🚀 Usage
+## Usage
 
 ### Running the Application
 
@@ -236,14 +236,13 @@ diff -b test.out test.outhyp
 ### Menu Structure
 
 **Main Menu:**
-- 📂 Create, Open, Save
-- 🌱 Advance Season
-- 📊 View Global Satisfaction
-- 🐾 Animal Management
-- 👥 Employee Management
-- 🏡 Habitat Management
-- 💉 Vaccine Management
-- 🔍 Queries
+- Create, Open, Save
+- Advance Season
+- View Global Satisfaction
+- Animal Management
+- Employee Management
+- Habitat Management
+- Vaccine Management
 
 **Animal Management:**
 - View all animals
@@ -277,7 +276,7 @@ diff -b test.out test.outhyp
 - Veterinarian's medical acts
 - Wrong vaccinations (errors)
 
-## 📥 Input Format
+## Input Format
 
 ### Text File Import Example
 
@@ -293,7 +292,7 @@ VACINA|idVacina|nomeVacina[|idEspécie1,...]
 
 Files are UTF-8 encoded. The application never produces this format (only reads it).
 
-## 📤 Output Formats
+## Output Formats
 
 ### Animal Display
 ```
@@ -321,7 +320,7 @@ HABITAT|idHabitat|nome|área|numTrees
 REGISTO-VACINA|idVacina|idVeterinário|idEspécie
 ```
 
-## 🧪 Testing
+## Testing
 
 The system includes automated testing infrastructure:
 - Import initial state from text file
@@ -329,15 +328,14 @@ The system includes automated testing infrastructure:
 - Compare output with expected results
 - Supports UTF-8 encoded files
 
-## 📚 Technologies Used
+## Technologies Used
 
 - **Language**: Java
 - **Design**: Object-Oriented Programming, Design Patterns
 - **Persistence**: Java Serialization
 - **UI Library**: po-uilib (provided)
-- **Support Libraries**: hva-app-support (provided)
 
-## 🎓 Academic Context
+## Academic Context
 
 This project was developed as part of the Object-Oriented Programming course at Instituto Superior Técnico, Universidade de Lisboa (2011).
 
@@ -348,16 +346,16 @@ This project was developed as part of the Object-Oriented Programming course at 
 - Complex domain modeling
 - Formula-based calculation systems
 
-## ⚙️ Design Requirements
+## Design Requirements
 
-- ✅ Open-Closed Principle compliance
-- ✅ Strategy Pattern for satisfaction calculations
-- ✅ State Pattern for seasonal tree behavior
-- ✅ Support for multiple hotel instances
-- ✅ Extensible search system
-- ✅ Minimal impact when adding new types
+- Open-Closed Principle compliance
+- Strategy Pattern for satisfaction calculations
+- State Pattern for seasonal tree behavior
+- Support for multiple hotel instances
+- Extensible search system
+- Minimal impact when adding new types
 
-## 📝 License
+## License
 
 This is an academic project. Please respect academic integrity policies if you're a student working on a similar assignment.
 
